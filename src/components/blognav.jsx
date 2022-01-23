@@ -4,6 +4,7 @@ import CardList from './CardList';
 import './blognav.css';
 import SearchBox from  '../components/SearchBox';
 
+
 class Blognav extends React.Component {
     
 
@@ -54,8 +55,8 @@ class Blognav extends React.Component {
         
         
         return (
-        <div>
-            <span >
+        <div >
+            <span className='bodymain'>
                  
                  <button onClick={this.alllShow} className='button button1'>ALL</button> &nbsp;&nbsp;
                  <button onClick={this.mlShow} className='button button2'>ML</button> &nbsp;&nbsp;

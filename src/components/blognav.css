@@ -1,3 +1,5 @@
+
+
 .button {
     
     border: none;
@@ -13,8 +15,10 @@
   }
   
   .button1 {
-    background-color: white; 
+    background-color: rgb(91, 245, 250); 
     color: black; 
+    border:solid 3px black;
+    border-radius: 8px;
    
   }
   
@@ -24,8 +28,10 @@
   }
   
   .button2 {
-    background-color: white; 
+    background-color: rgb(91, 245, 250); 
     color: black; 
+    border:solid 3px black;
+    border-radius: 8px;
    
   }
   
@@ -35,8 +41,10 @@
   }
   
   .button3 {
-    background-color: white; 
+    background-color: rgb(91, 245, 250); 
     color: black; 
+    border:solid 3px black;
+    border-radius: 8px;
     
   }
   
@@ -46,8 +54,10 @@
   }
   
   .button4 {
-    background-color: white;
+    background-color: rgb(91, 245, 250);
     color: black;
+    border:solid 3px black;
+    border-radius: 8px;
     
   }
   
