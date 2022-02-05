@@ -1,20 +1,16 @@
 import React, { Component } from "react";
-import Cardlist from '../components/CardList';
-import SearchBox from '../components/SearchBox';
-
-import { blogs } from '../components/blogs';
-import Header from '../components/Header';
-import Blognav from '../components/blognav';
-import Footer from '../components/footer';
+import BlogsPage from "../components/blogsPage";
+import Home from "../components/Home";
+import {Routes , Route} from 'react-router-dom'
 
 class App extends React.Component {
     render() {
         return (
-            <div className="tc">
-                <Header />
-                <Blognav />
-                <Footer />
-
+            <div  className="tc" /*style={{backgroundImage : `url(${bg})`}} */ >
+            <Routes>
+                    <Route path='/' element={<Home />}></Route>
+                    <Route path='/blogs' element={<BlogsPage />}></Route>
+            </Routes>
             </div>
         );
     }

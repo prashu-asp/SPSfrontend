@@ -7,10 +7,12 @@ import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 import { blogs } from './components/blogs';
 import CardList from './components/CardList';
-
+import { BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(
-  <App />,
+  <BrowserRouter>
+  <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
