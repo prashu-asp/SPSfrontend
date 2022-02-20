@@ -6,7 +6,8 @@ class HomeNav extends Component {
         return (
             <div>
                 <Link to='/'>Home</Link>&nbsp;&nbsp;
-                <Link to='/blogs'>Blogs</Link>
+                <Link to='/blogs'>Blogs</Link>&nbsp;&nbsp;
+                <Link to='/projects'>Projects</Link>
             </div>
         );
     }

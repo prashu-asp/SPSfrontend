@@ -7,14 +7,17 @@ import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 import { blogs } from './components/blogs';
 import CardList from './components/CardList';
+import Home from './components/Home'
 import { BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(
   <BrowserRouter>
   <App />
-  </BrowserRouter>,
+  </BrowserRouter> 
+  ,
   document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

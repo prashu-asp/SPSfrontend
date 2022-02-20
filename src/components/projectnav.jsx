@@ -1,42 +1,42 @@
 import React, { Component } from 'react';
-import {blogs}  from './blogs';
+import {projects}  from './projects';
 import CardList from './CardList';
 import './blognav.css';
 import SearchBox from  '../components/SearchBox';
 
 
-class Blognav extends React.Component {
+class ProjectNav extends React.Component {
     
 
     state = {
-        mainBlogs : blogs,
-        dupBlogs : [],
+        mainprojects : projects,
+        dupprojects : [],
         searchfield : ''
     }
    
     alllShow = () => {
-        let newblogs = this.state.mainBlogs
+        let newprojects = this.state.mainprojects
         
-        this.setState({dupBlogs : newblogs})
+        this.setState({dupprojects : newprojects})
     }
 
 
     mlShow = () => {
-        let newblogs = this.state.mainBlogs
-        newblogs = newblogs.filter( i => i.topic==='ML')
-        this.setState({dupBlogs : newblogs})
+        let newprojects = this.state.mainprojects
+        newprojects = newprojects.filter( i => i.topic==='ML')
+        this.setState({dupprojects : newprojects})
     }
 
     iotShow = () => {
-        let newblogs = this.state.mainBlogs
-        newblogs = newblogs.filter( i => i.topic==='IOT')
-        this.setState({dupBlogs : newblogs})
+        let newprojects = this.state.mainprojects
+        newprojects = newprojects.filter( i => i.topic==='IOT')
+        this.setState({dupprojects : newprojects})
     }
 
     webShow = () => {
-        let newblogs = this.state.mainBlogs
-        newblogs = newblogs.filter( i => i.topic==='WEB')
-        this.setState({dupBlogs : newblogs})
+        let newprojects = this.state.mainprojects
+        newprojects = newprojects.filter( i => i.topic==='WEB')
+        this.setState({dupprojects : newprojects})
     }
 
 
@@ -48,8 +48,8 @@ class Blognav extends React.Component {
 
     render() { 
         
-        const filteredblogs = this.state.dupBlogs.filter(blogs => {
-            return blogs.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+        const filteredprojects = this.state.dupprojects.filter(projects => {
+            return projects.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         
         })
         
@@ -66,12 +66,12 @@ class Blognav extends React.Component {
                  <br/>
                  <br />
                  <SearchBox searchChange={this.onSearchChange}/>
-                 <CardList items={filteredblogs} />
+                 <CardList items={filteredprojects} />
             </span>
         </div>
         );
     }
 }
  
-export default Blognav;
+export default ProjectNav;
 
