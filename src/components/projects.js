@@ -2,7 +2,7 @@ export const projects = [
     {
       id:1,
       topic: 'ML',
-      name: 'using matlab to measure the diameter of a image using matlab to measure the diameter of a image',
+      name: 'Random Forest',
       username: 'Prashu',
       email: 'prashu@gmail.com'
     },
@@ -51,7 +51,7 @@ export const projects = [
     {
       id: 8,
       topic: 'IOT',
-      name: 'using matlab to measure the diameter of a image using matlab to measure the diameter of a image',
+      name: 'Plant Monitoring',
       username: 'Maxime_Nienow',
       email: 'gopi@gmail.com'
     },
@@ -65,7 +65,7 @@ export const projects = [
     {
       id: 10,
       topic: 'ML',
-      name: 'classification',
+      name: 'Naive Bayes',
       username: 'Moriah.Stanton',
       email: 'bhargav@gmail.com'
     }
